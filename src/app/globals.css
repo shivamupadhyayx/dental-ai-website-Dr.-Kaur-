@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6fafe; /* surface */
+  --foreground: #171c1f; /* on-surface */
+  
+  --surface: #f6fafe;
+  --surface-container-low: #f0f4f8;
+  --surface-container: #eaeef2;
+  --surface-container-highest: #ffffff;
+  
+  --primary: #00685f;
+  --primary-container: #008378;
+  --on-primary: #ffffff;
+  
+  --secondary: #0062a1;
+  --secondary-container: #61b0fe;
+  
+  --outline-variant: #bcc9c6;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-outline-variant: var(--outline-variant);
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+
+  --drop-shadow-ambient: 0 4px 24px rgba(23, 28, 31, 0.08);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base structural zero-border utility logic */
+* {
+  border-width: 0;
+}
